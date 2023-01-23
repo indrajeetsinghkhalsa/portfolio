@@ -1,0 +1,112 @@
+
+// header section
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    background: #54B689;
+    color: #fff;
+    overflow-y: auto;
+
+    .navbar-toggler {
+        border-radius: 2px;
+        -webkit-opacity: .8;
+        -moz-opacity: .8;
+        opacity: .8;
+        border: 1px solid rgba(255,255,255,0.8);
+        padding: 0.25rem 0.6rem;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(../../assests/navbar-icon.svg);
+    }
+
+    .blog-name {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .blog-name a {
+        color: #fff;
+    }
+
+    // profile section
+    .profile-section {
+        .profile-image {
+            max-width: 160px;
+        }
+        .bio {
+            font-size: 0.875rem;
+        }
+
+        .list-inline-item a i{
+            color: #fff;
+        } 
+        hr {
+        background-color: currentColor;
+        }
+
+    }
+
+    // menu
+    .menu{
+        text-align: left;
+        .nav-item {
+            font-weight: bold;
+            color: white;
+        }
+        .menuImage{
+            height: 16px;
+            padding-right: 12px;
+            margin-bottom: 12px;
+        }
+        .active{
+            color: rgba(0,0,0,0.5);
+        }
+    }
+
+    // hire me
+    .hireMe{
+        .btn-primary {
+            background: rgba(0,0,0,0.3);
+            border-color: transparent;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .hireMeImg{
+            height: 20px;
+            padding-right: 10px;
+
+        }
+    }
+
+   
+}
+
+@media (max-width: 991.98px){
+    .header {
+        position: static;
+        width: inherit;
+        height: auto;
+
+        .blog-name {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 1.2rem;
+        }
+
+        .navbar {
+            padding: 1rem;
+        }
+
+        .hireMe{ 
+            .btn-primary {
+                width: 100%;   
+            }
+        }
+    }
+}
