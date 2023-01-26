@@ -1,0 +1,17 @@
+// change the theme
+$theme-colors: (
+  "primary": #54B689,
+  "danger": #ff4136,
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+:root{
+  --bs-link-color: #54B689;
+  
+  --bs-primary: #54B689; 
+}
+
+.btn-primary{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #54B689;
+}
