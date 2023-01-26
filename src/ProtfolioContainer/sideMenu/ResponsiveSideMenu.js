@@ -4,10 +4,16 @@ import hireMe from "../../assests/hierMe.svg";
 import { Nav } from "react-bootstrap";
 import "bootstrap/js/src/collapse.js";
 import "./ResponsiveSideMenu.scss";
+import { useNavigate } from "react-router-dom";
+
 
 const ResponsiveSideMenu = () => {
+  const navigate = useNavigate();
+  const changePath = (path) => {
+    navigate(path)
+  }
     return (
-        <div>
+        <section>
           <header className="header text-center">
             <div className="force-overflow">
               <h1 className="blog-name pt-lg-4 mb-0">
@@ -72,12 +78,13 @@ const ResponsiveSideMenu = () => {
                   {/* menu */}
                   <div className="menu">
                     <Nav
-                      defaultActiveKey="http://localhost:1153/"
+                      defaultActiveKey="/"
                       className="mr-auto flex-column"
+                      onSelect={(selectedKey) => changePath(selectedKey)}
                     >
                       <Nav.Item>
                         <Nav.Link
-                          href="http://localhost:1153/"
+                          href="/"
                           className="flex-column nav-item"
                         >
                           <img
@@ -105,7 +112,7 @@ const ResponsiveSideMenu = () => {
                           />
                           Resume
                         </Nav.Link>
-                        <Nav.Link eventKey="#" className="flex-column nav-item">
+                        <Nav.Link eventKey="/ContactMe" className="flex-column nav-item">
                           <img
                             className="menuImage"
                             src={aboutMeSvg}
@@ -118,23 +125,17 @@ const ResponsiveSideMenu = () => {
                   </div>
     
                   {/* hier me */}
-                  <div class="my-2 hireMe">
-                    <a class="btn btn-primary" href="contact.html" target="_blank">
+                  <div className="my-2 hireMe">
+                    <a className="btn btn-primary" href="contact.html" target="_blank">
                       <img className="hireMeImg" src={hireMe} alt="hireMe" />
                       Hire Me
                     </a>
                   </div>
                 </div>
-    
-                <div className="profile-container">
-                  <div className="profile-parent">
-                    <div className="profile-details"></div>
-                  </div>
-                </div>
               </nav>
             </div>
           </header>
-        </div>
+        </section>
       );
 }
 
