@@ -1,9 +1,18 @@
 import "./Profile.scss";
 import "bootstrap/js/src/collapse.js";
+import { AboutMe } from "./AboutMe/AboutMe";
+import { Overview } from "./Overview/Overview";
+import { TestimonialCrousel } from "./TestimonialCrousel/TestimonialCrousel";
+import { Project } from "./Project/Project";
 
 function Profile() {
   return (
-    <div><h1>Hello</h1></div>
+    <div className="Profile">
+      <AboutMe />
+      <Overview />
+      <TestimonialCrousel />
+      <Project />
+    </div>
   );
 }
 

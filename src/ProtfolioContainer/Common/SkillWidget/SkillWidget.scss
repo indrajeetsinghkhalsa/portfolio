@@ -1,0 +1,22 @@
+.skill{
+    margin-bottom: 2rem;
+    border-left-style: outset;
+    border-color: #54B689;
+    border-width: 0.1rem;
+    .item-inner{
+        .item-icon{
+            font-size: 1.875rem;
+            svg{
+                height: 24px;
+            }
+        }
+        .item-title{
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .item-description{
+            color: #4f4f4f;
+            font-size: 0.875rem;
+        }
+    }
+}

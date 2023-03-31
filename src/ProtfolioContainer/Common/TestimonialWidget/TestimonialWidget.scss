@@ -1,0 +1,61 @@
+.custom-crousel {
+    margin-right: 30px;
+    .item-inner {
+        padding: 1.5rem;
+        padding-left: 3rem;
+        border: 1px solid rgba(0,0,0,0.025);
+        background: #fafafa;
+        height: 100%;
+        position: relative;
+
+        .quote-holder {
+            .quote-content{
+                margin: 0 0 1rem
+            }
+            .fa-quote-left {
+                position: absolute;
+                left: 0.35rem;
+                top: 0.3rem;
+                color: #fff;
+                font-size: 0.75rem;
+                height: 15px;
+            }
+        }
+    }
+    
+    .item-inner:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 40px 0 0;
+        border-color: #54B689 transparent transparent transparent;
+        -webkit-transform: rotate(360deg);
+    }
+     .source-holder {
+        position: relative;
+        padding-left: 76px;
+        height: 60px;
+
+        .source-profile {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            img {
+                max-width: 60px;
+                border-radius: 50%;
+            }
+        }
+
+        .meta {
+            padding-top: 0.5rem;
+            color: #8f8f8f;
+            font-size: 0.8125rem;
+        }
+    }
+}
