@@ -1,0 +1,40 @@
+.about-me{
+    background: #f4f8fb;
+    .profile-teaser{
+        .name{
+            font-size: 3rem;
+            margin-bottom: 0.25rem !important;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1rem !important;
+        }
+        svg{
+            height: 16px;
+        }
+        .btn-secondary{
+            color: #fff;
+            background-color: #4f4f4f;
+            border-color: #4f4f4f;
+            margin-bottom: 1rem;
+        }
+        .profile-image {
+            max-width: 300px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .about-me .profile-teaser .profile-image {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1200px){
+.about-me .profile-teaser .profile-image {
+    max-width: 400px;
+}
+}
