@@ -1,0 +1,63 @@
+[
+  {
+    "title": "PROJECTS",
+    "data": [
+      {
+        "subTitle": "METROX (Fullstack Developer)",
+        "tag": "AMDOCS",
+        "description": "Assets Management for Servers. In a production environment where users can manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more",
+        "featurePoints": [
+          "Assets Management for Different Enviroment",
+          "Support CI/CD",
+          "Scan The Evironment",
+          "Drift MAnagement(Find the Differenece with old state and new state)",
+          "FTP Support"
+        ]
+      },
+      {
+        "subTitle": "Athena UPI-PSP (Backend Developer)",
+        "tag": "Verinite Technology Collaborate with Zeta",
+        "description": "Creating the Ecosystem where any bank and registor as a PSP provide to make their transcation Digital using QR can and VPA. It support Mandate between Cutomer to Customer or Bank to customer for Recurring payemnt.",
+        "featurePoints": [
+          "Support Creating VPA",
+          "Support For Mandate",
+          "QR Payment",
+          "Bank-Bank-tranfer",
+          "Automate and Manual Disput Resolution"
+        ]
+      },
+      {
+        "subTitle": "Indusind-Addon (Backend Developer)",
+        "tag": "Verinite Technology Collaborate with Zeta",
+        "description": "When user do Online Shopping with credit card, after that is user want to an EMI Option for its bill then that process is a manual where user have to call service center and ask for this support. Now in this project  we solve the problem where Bank can directly provide an option to convert into EMI option when user using a Credit Card for online shopping and is their any rewards point available then this is be substracted from bill at that time."
+      },
+      {
+        "subTitle": "Water State Observation using IOT (Backend developer)",
+        "tag": "Finel Year Project",
+        "description": "Idea is to make a device which can collect the water state form Rever, Lack, Tank etc. and notify the end user that how much water is clean and it is usbale or not. We are capturing the Temprature, PHP value and Oxygen level, water motion to identify the water state."
+      },
+      {
+        "subTitle": "Job Scheduling System (Fullstack Developer)",
+        "tag": "Tushar Precicomp Pvt Ltd.",
+        "description": "On Industry where their are N different CNC manchine and each Machine can capable of doing N no of different task. Here, for a single person, it is very difficult for managers to allocate tasks for workers with files to be run on which machine. And it is very difficult to track in a sift how much through machine and worker had cover. TO solve this problem, we make this soltuion which web acrchiture to automater this process in single click",
+        "featurePoints": [
+          "Allocate task by Manager",
+          "Machine Audit",
+          "Worker Audit",
+          "Inventry for Material and final prodiuct"
+        ]
+      },
+      {
+        "subTitle": "Trainig and Placment Management for Colleage",
+        "tag": "MET Bhujbal Knowledge City, Nashik",
+        "description": "To tack the student data how had Placed in which company and Collecting student data to send for company Placement Interview where find a elligible candidate from that hug data is tiduce task. To solve this problem, we design a system where students fill details with their documents which are verified at two levels and now, using this system, they can generate data with a single click with selection criteria.",
+        "featurePoints": [
+          "Data Validation of two levels by system",
+          "Resumen Generator",
+          "Criteriya evalutaotr",
+          "Segrigate the sudent who already placed"
+        ]
+      }
+    ]
+  }
+]
