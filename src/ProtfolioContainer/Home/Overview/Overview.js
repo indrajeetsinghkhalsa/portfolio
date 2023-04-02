@@ -4,7 +4,7 @@ import {ReactComponent as JavaScriptIcon} from "../../../assests/languageLogo/ja
 import {ReactComponent as JavaIcon} from "../../../assests/languageLogo/java-svgrepo-com.svg"
 import {ReactComponent as HtmlIcon} from "../../../assests/languageLogo/html-5-svgrepo-com.svg"
 import {ReactComponent as CssIcon} from "../../../assests/languageLogo/css-3-svgrepo-com.svg"
-import {ReactComponent as SpringBootIcon} from "../../../assests/languageLogo/springio-ar21.svg"
+import {ReactComponent as SpringBootIcon} from "../../../assests/languageLogo/springio-icon.svg"
 import {ReactComponent as ReactJsIcon} from "../../../assests/languageLogo/reactjs-svgrepo-com.svg"
 import {ReactComponent as GitIcon} from "../../../assests/languageLogo/git-svgrepo-com.svg"
 import {ReactComponent as sqlIcon} from "../../../assests/languageLogo/sql-svgrepo-com.svg"

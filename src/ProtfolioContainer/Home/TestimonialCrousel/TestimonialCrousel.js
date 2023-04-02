@@ -2,6 +2,8 @@ import { TestimonialWidget } from "../../Common/TestimonialWidget/TestimonialWid
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import developerStudentClub from "../../../assests/png/developer-student-club.png";
+import testimonialData from "../../../Data/testimonialData/TestimonialData.json";
 
 export const TestimonialCrousel = () => {
   var settings = {
@@ -34,55 +36,16 @@ export const TestimonialCrousel = () => {
     ]
   };
 
-  const crouselData = [
-    {
-      message:
-        "Indrajeet Singh is a brilliant software engineer! Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-      imageUrl: "../../../../assests/unnamed.webp",
-      name: "Indrajeet Singh Badgujar",
-      designation: "Software Engineer",
-    },
-    {
-        message:
-          "Indrajeet Singh is a brilliant software engineer! Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-        name: "Pranav Zagade",
-        designation: "Software Engineer",
-      },
-      {
-        message:
-          "Indrajeet Singh is a brilliant software engineer! Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-        name: "Aman Khunere",
-        designation: "Software Engineer",
-      },
-      {
-        message:
-          "Indrajeet Singh is a brilliant software engineer! Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-        name: "Shruti Khedkar",
-        designation: "Software Engineer",
-      },
-      {
-        message:
-          "Indrajeet Singh is a brilliant software engineer! Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-        name: "Vivek Singh",
-        designation: "Software Engineer",
-      },
-      {
-        message:
-          "Indrajeet Singh is a brilliant software engineer! Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis.",
-        name: "Vigyani Singh",
-        designation: "Software Engineer",
-      },
-  ];
   return (
     <section className="testimonial p-3 p-lg-5">
       <div className="container">
         <h2 class="section-title font-weight-bold mb-5">Testimonials</h2>
         <Slider {...settings}>
-          {crouselData.map(
+          {testimonialData.map(
             (data) =>
               data.message && (
                 <TestimonialWidget
-                  imagepath={data.image}
+                  imagepath={data.imageUrl}
                   name={data.name}
                   designation={data.designation}
                   message={data.message}
