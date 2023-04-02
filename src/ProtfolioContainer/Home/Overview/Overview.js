@@ -1,3 +1,4 @@
+import PageSection from "../../Common/Page/PageSection";
 import { SkillWidget } from "../../Common/SkillWidget/SkillWidget";
 
 const Javascript = () => {
@@ -69,35 +70,40 @@ export const Overview = () => {
     },
   ];
   return (
-    <section className="overview p-3 p-lg-5">
-      <div className="container">
-        <h2 className="section-title">What I do</h2>
-        <div class="section-intro mb-5">
-          I have more than 2 years' experience building software for clients.{" "}
-          Below is a quick overview of my main technical skill sets and
-          technologies I use. Want to find out more about my experience? Check
-          out my{" "}
-          <a class="text-link" href="#">
-            online resume
-          </a>{" "}
-          and{" "}
-          <a class="text-link" href="#">
-            project portfolio
-          </a>
-          .
-        </div>
-        <div className="row">
-          {skillSet.map((skill) => (
-            <SkillWidget
-              id={skill.title}
-              Icon={skill.Icon}
-              title={skill.title}
-              description={skill.description}
-            />
-          ))}
-        </div>
-      </div>
-      <hr />
-    </section>
+    <PageSection
+      className={"overview"}
+      body={
+        <>
+          <div className="container">
+            <h2 className="section-title">What I do</h2>
+            <div class="section-intro mb-5">
+              I have more than 2 years' experience building software for
+              clients. Below is a quick overview of my main technical skill sets
+              and technologies I use. Want to find out more about my experience?
+              Check out my{" "}
+              <a class="text-link" href="#">
+                online resume
+              </a>{" "}
+              and{" "}
+              <a class="text-link" href="#">
+                project portfolio
+              </a>
+              .
+            </div>
+            <div className="row">
+              {skillSet.map((skill) => (
+                <SkillWidget
+                  id={skill.title}
+                  Icon={skill.Icon}
+                  title={skill.title}
+                  description={skill.description}
+                />
+              ))}
+            </div>
+          </div>
+          <hr />
+        </>
+      }
+    ></PageSection>
   );
 };

@@ -7,7 +7,7 @@ import { Project } from "./Project/Project";
 
 function Profile() {
   return (
-    <div className="Profile">
+    <div className="content-section Profile">
       <AboutMe />
       <Overview />
       <TestimonialCrousel />
