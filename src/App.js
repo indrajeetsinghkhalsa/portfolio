@@ -2,6 +2,7 @@ import {Route, Routes, HashRouter } from "react-router-dom";
 import "./App.css";
 import { ContactMe } from "./ProtfolioContainer/ContactMe/ContactMe";
 import Profile from "./ProtfolioContainer/Home/Profile";
+import Project from "./ProtfolioContainer/Project/Project";
 import Resume from "./ProtfolioContainer/Resume/Resume";
 import ResponsiveSideMenu from "./ProtfolioContainer/sideMenu/ResponsiveSideMenu";
 
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" element={<Profile/>} />
           <Route exact path="/ContactMe" element={<ContactMe/>} />
           <Route exact path="/Resume" element={<Resume/>} />
+          <Route exact path="/Project" element={<Project/>} />
         </Routes>
       </HashRouter>
     </div>

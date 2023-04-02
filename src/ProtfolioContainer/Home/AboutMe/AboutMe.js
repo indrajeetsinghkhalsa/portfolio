@@ -20,9 +20,9 @@ const GetAboutMe = () => {
             complex scalable web apps. I write resuable code for software
             development. Want to know how I may help your project? Check out my
             project{" "}
-            <a class="text-link" href="#">
+            <Link className="text-link" to="/Project">
               portfolio
-            </a>{" "}
+            </Link>{" "}
             and{" "}
             <Link className="text-link" to="/Resume">
               online resume
@@ -32,7 +32,7 @@ const GetAboutMe = () => {
           <div class="mb-4">
             <ButtonComponent
               lable={"Portfolio"}
-              onClickFunction={() => {}}
+              onClickFunction={() => navigate("/Project", { replace: true })}
               imageIcon={<ForwardArrow />}
               lableNone={"View"}
             />
