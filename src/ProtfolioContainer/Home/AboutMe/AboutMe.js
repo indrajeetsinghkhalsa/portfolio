@@ -31,15 +31,17 @@ const GetAboutMe = () => {
           </div>
           <div class="mb-4">
             <ButtonComponent
-              lable={"View Portfolio"}
+              lable={"Portfolio"}
               onClickFunction={() => {}}
               imageIcon={<ForwardArrow />}
+              lableNone={"View"}
             />
             <ButtonComponent
               className={"btn-secondary"}
-              lable={"View Resume"}
+              lable={"Resume"}
               onClickFunction={() => navigate("/Resume", { replace: true })}
               imageIcon={<Document />}
+              lableNone={"View"}
             />
           </div>
         </div>

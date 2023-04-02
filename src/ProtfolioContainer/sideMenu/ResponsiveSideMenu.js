@@ -93,12 +93,12 @@ const ResponsiveSideMenu = () => {
               {/* menu */}
               <div className="menu">
                 <Nav
-                  defaultActiveKey="/#"
+                  defaultActiveKey="portfolio/#"
                   className="mr-auto flex-column"
                   onSelect={(selectedKey) => changePath(selectedKey)}
                 >
                   <Nav.Item>
-                    <Nav.Link href="/#" className="flex-column nav-item">
+                    <Nav.Link eventKey="/#" className="flex-column nav-item">
                       <AboutMeSvg height="16px" />
                       About Me
                     </Nav.Link>
