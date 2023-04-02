@@ -5,9 +5,11 @@
     border-width: 0.1rem;
     .item-inner{
         .item-icon{
+            display: inline-flex;
             font-size: 1.875rem;
             svg{
                 height: 24px;
+                width: 24px;
             }
         }
         .item-title{

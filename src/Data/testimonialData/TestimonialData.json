@@ -1,0 +1,27 @@
+[
+    {
+      "message":
+        "We would like to thank you for the commitment, hard work and flexibility during your tenure with Verinite. We certify that you were employed with Verinite Technologies Private Limited from the period 02nd Dec 2020 to 11th Aug 2022. At the time of leaving, you were designated as a Senior Software Associate.",
+      "name": "Ashish Katkar",
+      "designation": "CEO"
+    },
+    {
+      "message":
+        "We hope you are doing well. First off,  we wanted to say thank you for being a Developer Student Clubs Lead over the past year (2019-2020). We are amazed by the impact you made on your community and are excited to see what you all accomplish in the future. Best of luck",
+      "name": "Developer Student Club",
+      "designation": "Community",
+      "imageUrl": "/image/png/developer-student-club.png"
+    },
+    {
+        "message":
+          "We'll Certainly miss you Indrajeet Singh. Your contribution was immense and you were the goto person for Mandate. Best Wwishes for your Future endeavors and envisions.",
+        "name": "Balaji Iyengar",
+        "designation": "Retail Payment-Athena-UPI"
+      },
+      {
+       "message":
+          "Excellent seminar on basic components of computer, generation of computer and installation of Linux OS. useful seminar for me! ",
+        "name": "Rishav Mishra",
+        "designation": "MET Student"
+      }
+  ]
