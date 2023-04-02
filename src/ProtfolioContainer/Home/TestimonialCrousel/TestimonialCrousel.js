@@ -2,7 +2,6 @@ import { TestimonialWidget } from "../../Common/TestimonialWidget/TestimonialWid
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import developerStudentClub from "../../../assests/png/developer-student-club.png";
 import testimonialData from "../../../Data/testimonialData/TestimonialData.json";
 
 export const TestimonialCrousel = () => {
