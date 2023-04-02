@@ -1,0 +1,35 @@
+.item-section {
+
+    .item-section-heading {
+        position: relative;
+        padding-left: 1rem;
+        font-size: 1.125rem;
+        letter-spacing: 0.15rem;
+        color: #54b689;
+      }
+
+      .item-section-heading:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 100%;
+        background: #54b689;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+  .item {
+    .item-title {
+      font-size: 1rem;
+    }
+    .item-heading {
+      .item-meta {
+        font-size: 0.75rem;
+      }
+    }
+    .item-content {
+      font-size: 0.875rem;
+    }
+  }
+}

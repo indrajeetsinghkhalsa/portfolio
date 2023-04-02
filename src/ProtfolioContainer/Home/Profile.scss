@@ -1,8 +1,4 @@
 .Profile{
-    text-align: left !important;
-    width: calc(100% - 280px);
-    height: inherit;
-    margin-left: auto;
     .section-title {
         font-size: 2rem;
         position: relative;
@@ -18,11 +14,4 @@
         left: 0;
         top: 0;
     }
-}
-
-@media (max-width: 991.98px) {
-    .Profile{
-        width: 100%;
-    }
-    
 }

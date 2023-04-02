@@ -1,0 +1,66 @@
+.resume {
+  .resume-header > h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .resume-container {
+    border: 1px solid rgba(0, 0, 0, 0.025);
+    .resume-wrapper {
+      .resume-container-header {
+        .resume-title {
+          .resume-name {
+            font-size: 2.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1rem;
+            color: #54b689;
+          }
+          .resume-tagline {
+            font-size: 1.25rem;
+            font-weight: 300;
+          }
+        }
+        .resume-contact {
+          border-left: 1px solid rgba(0, 0, 0, 0.08);
+          font-size: 0.75rem;
+          a.resume-link {
+            color: #4f4f4f;
+          }
+        }
+      }
+
+      .resume-intro {
+        .resume-profile-image {
+          max-width: 120px;
+        }
+      }
+
+      .resume-body {
+        .resume-aside {
+          border-left: 1px solid rgba(0, 0, 0, 0.08);
+          .education{
+            .item {
+              .item-content>p{
+                color: #767676 !important;
+                margin-bottom: 0px;
+              }
+            }
+          }
+          .awards{
+            .item {
+              .item-content>ul>li{
+                margin-bottom: 1rem;
+              }
+            }
+          }
+          .languages{
+            .item {
+              .item-content>ul>li{
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Work Experiences",
+    "data": [
+      {
+        "subTitle": "Software Associate",
+        "tag": "Verinite Technology Pvt Ltd (Zeta) | 2020–2022",
+        "description": "Software Associate (Java Developer). Working on Technology: Microservice Architecture to Solve the Bank's Industrial Problem with 90% Code Coverage Done two projects in this role: the bank application to do online payments and the credit card bill generator.",
+        "featurePoints": [
+          "Microservice",
+          "Bitbucket for code managment",
+          "Sonarqube for code quality",
+          "Jenkins for CI/CD"
+        ]
+      },
+      {
+        "subTitle": "Senior Software Associate",
+        "tag": "Verinite Technology Pvt Ltd (Zeta) | 2022-2022",
+        "description": "Software Associate (Java Developer). Working on Technology: Microservice Architecture to Solve the Bank's Industrial Problem with 90% Code Coverage 1 Mangor project to make UPI-PSP for HDFC Bank with the collaboration of Unified Payments Interface to consume their API for payment. Provided Training on Databases and Spring Boot.",
+        "featurePoints": [
+          "Ownership of one service and implementing Architechure State Machine for implementing the feature",
+          "Bitbucket for code management",
+          "Sonarqube for code quality",
+          "Jenkins for CI/CD",
+          "Kibana for log managment",
+          "Docker for creating docker image",
+          "Given training to juneras"
+        ]
+      },
+      {
+        "subTitle": "Software Engineer",
+        "tag": "Amdocs | 08/2022-Present",
+        "Description": "R&D Department, where I am working as a Full Stack Developer with different tools and farmwork. I do research on a feature to solve the problem raised by the customer and improve the customer experience with improvements to the code and adding new features.",
+        "featurePoints": [
+          "Project: Assessment Management for Servers. In a production environment where users can manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more",
+          "Gitlab for code management",
+          "Sonarqube for code quality",
+          "Jenkins for CI/CD"
+        ]
+      }
+    ]
+  }
+]
