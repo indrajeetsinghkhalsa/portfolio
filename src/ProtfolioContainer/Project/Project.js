@@ -5,6 +5,10 @@ import { useNavigate } from "react-router";
 import "./Project.scss";
 import PageSection from "../Common/Page/PageSection";
 import { ProjectCards } from "./ProjectCards";
+import PortfolioModal from "../Common/Modal/PortfolioModal";
+import ProjectDetails from "./ProjectDetail";
+import { useState } from "react";
+import ProjectList from "../../Data/projectDetails/ProjectDetails.json";
 
 const PorjectHeader = () => {
     const navigate = useNavigate();
@@ -29,14 +33,24 @@ const PorjectHeader = () => {
 };
 
 const Project = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [ProjectModalData, setProjectModalData] = useState({});
+  const projectToggleModal = (projectId) =>{
+    setProjectModalData(ProjectList.filter(project => project.projectId === projectId));
+    setOpenModal(!openModal)
+  }
+
   return (
     <div className="content-section project">
       <PageHeader className="project-header text-center single-col-max-width" Header={<PorjectHeader />}/>
       <PageSection className="project-container"
         body={
-            <ProjectCards/>
+          <ProjectCards onClickFunction={projectToggleModal} />
         }
       />
+      {openModal && (
+        <PortfolioModal modalCloseAction={projectToggleModal} onClickFunction ={projectToggleModal} modalBody={<ProjectDetails project={ProjectModalData[0]}/>}/>
+      )}
     </div>
   );
 };
