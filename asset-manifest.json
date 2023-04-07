@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.98996ddf.css",
-    "main.js": "/portfolio/static/js/main.542fe339.js",
+    "main.css": "/portfolio/static/css/main.361ff18b.css",
+    "main.js": "/portfolio/static/js/main.d2d1015d.js",
     "static/js/498.08e1e2c8.chunk.js": "/portfolio/static/js/498.08e1e2c8.chunk.js",
     "static/js/703.041860bd.chunk.js": "/portfolio/static/js/703.041860bd.chunk.js",
     "static/js/598.485ca944.chunk.js": "/portfolio/static/js/598.485ca944.chunk.js",
@@ -16,9 +16,11 @@
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "static/media/git-svgrepo-com.svg": "/portfolio/static/media/git-svgrepo-com.6f19690dc5fd14f7a9593d09f8d78b36.svg",
+    "static/media/link.svg": "/portfolio/static/media/link.828ec75c87164b8ae4b48bc9242e1294.svg",
     "static/media/sql-svgrepo-com.svg": "/portfolio/static/media/sql-svgrepo-com.14f1580f476092cb7e8951197dcc6031.svg",
     "static/media/github.svg": "/portfolio/static/media/github.892b38deab32aa8a368383dcbb846f44.svg",
     "static/media/pdf.svg": "/portfolio/static/media/pdf.115d4e56429bac1d1a9876a8bfe80e5a.svg",
+    "static/media/peopleSize.svg": "/portfolio/static/media/peopleSize.0ba94f8b80721f6433cd41f4201b9e90.svg",
     "static/media/contact.svg": "/portfolio/static/media/contact.621bf08176eaae02946906bd223869e0.svg",
     "index.html": "/portfolio/index.html",
     "static/media/portfolio.svg": "/portfolio/static/media/portfolio.99851ea0081cd240f969529c7186cb6d.svg",
@@ -32,19 +34,20 @@
     "static/media/forwardArrow.svg": "/portfolio/static/media/forwardArrow.e651aac5434cb3eec85dce4eb459a7b4.svg",
     "static/media/linkedIn.svg": "/portfolio/static/media/linkedIn.2639ed1b414643aa572e0084f1fe5cae.svg",
     "static/media/location.svg": "/portfolio/static/media/location.0192e6becb1d7398898054aafd0f6635.svg",
+    "static/media/industry.svg": "/portfolio/static/media/industry.626faac79fe3eaad1fd7691a49b12639.svg",
     "static/media/aboutMe.svg": "/portfolio/static/media/aboutMe.7cc597a538460da752213223bceba65e.svg",
     "static/media/html-5-svgrepo-com.svg": "/portfolio/static/media/html-5-svgrepo-com.bfc29cc664956a7748f9ee78fa82ec7b.svg",
     "static/media/cross.svg": "/portfolio/static/media/cross.ae86f085ae19395cb6166b3a35212767.svg",
     "static/media/navbar-icon.svg": "/portfolio/static/media/navbar-icon.8f0f70787878727959f0.svg",
-    "main.98996ddf.css.map": "/portfolio/static/css/main.98996ddf.css.map",
-    "main.542fe339.js.map": "/portfolio/static/js/main.542fe339.js.map",
+    "main.361ff18b.css.map": "/portfolio/static/css/main.361ff18b.css.map",
+    "main.d2d1015d.js.map": "/portfolio/static/js/main.d2d1015d.js.map",
     "498.08e1e2c8.chunk.js.map": "/portfolio/static/js/498.08e1e2c8.chunk.js.map",
     "703.041860bd.chunk.js.map": "/portfolio/static/js/703.041860bd.chunk.js.map",
     "598.485ca944.chunk.js.map": "/portfolio/static/js/598.485ca944.chunk.js.map",
     "787.c4e7f8f9.chunk.js.map": "/portfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98996ddf.css",
-    "static/js/main.542fe339.js"
+    "static/css/main.361ff18b.css",
+    "static/js/main.d2d1015d.js"
   ]
 }
