@@ -1,0 +1,37 @@
+[
+  {
+    "projectId": "pd1",
+    "projectTitle": "Athena-UPI",
+    "projectImage": "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp",
+    "description": "Creating the Ecosystem where any bank and registor as a PSP provide to make their transcation Digital using QR can and VPA. It support Mandate between Cutomer to Customer or Bank to customer for Recurring payemnt.",
+    "metaData": {
+      "clientSectionImage": "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp",
+      "clientName": "Zeta",
+      "industry": "Tech",
+      "size": 1000,
+      "website": "http://client.com",
+      "clientBio": "Zeta is a tech solution product based company which make product form Banks",
+      "requirement": [
+        "Support Creating VPA",
+        "Support For Mandate",
+        "QR Payment",
+        "Bank-Bank-tranfer",
+        "Automate and Manual Disput Resolution"
+      ]
+    },
+    "projectDetails": [
+      {
+        "showInBetweenImage": false,
+        "subTitle": "Project OverView",
+        "description": "UPI Athena is solution for Banks to tarnsfer mony online through up. This project is created in generalised way where any bank register as VPA-Provider. We support vpa block Mandate for Auto Recurring Payment which QR support."
+      },
+      {
+        "showInBetweenImage": true,
+        "subTitle": "Sub Service And its Architechure",
+        "beforImage": "Mandate is a sub system of UPI where user can Make an Digital Agreement between payer and payee/remitter banks to enable Recurring payement which is auto deducted from payer bank on date which is mentioned in contract/mandate. This system support Create, Update, Pause, UnPause, Delete and Mandate execution. Form more details you can visit on UPI website",
+        "images": ["/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp", "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp"],
+        "afterImage": "I have worked on Mandate service from Scrach where I have used State Machine for implementing the architechure for somth flow of Trasection where single Transection have multiple state or al state are Asyncronses."
+      }
+    ]
+  }
+]

@@ -1,14 +1,15 @@
 import PageSection from "../../Common/Page/PageSection";
 import { SkillWidget } from "../../Common/SkillWidget/SkillWidget";
-import {ReactComponent as JavaScriptIcon} from "../../../assests/languageLogo/javascript-svgrepo-com.svg"
-import {ReactComponent as JavaIcon} from "../../../assests/languageLogo/java-svgrepo-com.svg"
-import {ReactComponent as HtmlIcon} from "../../../assests/languageLogo/html-5-svgrepo-com.svg"
-import {ReactComponent as CssIcon} from "../../../assests/languageLogo/css-3-svgrepo-com.svg"
-import {ReactComponent as SpringBootIcon} from "../../../assests/languageLogo/springio-icon.svg"
-import {ReactComponent as ReactJsIcon} from "../../../assests/languageLogo/reactjs-svgrepo-com.svg"
-import {ReactComponent as GitIcon} from "../../../assests/languageLogo/git-svgrepo-com.svg"
-import {ReactComponent as sqlIcon} from "../../../assests/languageLogo/sql-svgrepo-com.svg"
-import {ReactComponent as KibanatIcon} from "../../../assests/languageLogo/kibana-svgrepo-com.svg"
+import { ReactComponent as JavaScriptIcon } from "../../../assests/languageLogo/javascript-svgrepo-com.svg";
+import { ReactComponent as JavaIcon } from "../../../assests/languageLogo/java-svgrepo-com.svg";
+import { ReactComponent as HtmlIcon } from "../../../assests/languageLogo/html-5-svgrepo-com.svg";
+import { ReactComponent as CssIcon } from "../../../assests/languageLogo/css-3-svgrepo-com.svg";
+import { ReactComponent as SpringBootIcon } from "../../../assests/languageLogo/springio-icon.svg";
+import { ReactComponent as ReactJsIcon } from "../../../assests/languageLogo/reactjs-svgrepo-com.svg";
+import { ReactComponent as GitIcon } from "../../../assests/languageLogo/git-svgrepo-com.svg";
+import { ReactComponent as sqlIcon } from "../../../assests/languageLogo/sql-svgrepo-com.svg";
+import { ReactComponent as KibanatIcon } from "../../../assests/languageLogo/kibana-svgrepo-com.svg";
+import { Link } from "react-router-dom";
 
 export const Overview = () => {
   const skillSet = [
@@ -69,13 +70,13 @@ export const Overview = () => {
               clients. Below is a quick overview of my main technical skill sets
               and technologies I use. Want to find out more about my experience?
               Check out my{" "}
-              <a class="text-link" href="#">
-                online resume
-              </a>{" "}
+              <Link className="text-link" to="/Project">
+                portfolio
+              </Link>{" "}
               and{" "}
-              <a class="text-link" href="#">
-                project portfolio
-              </a>
+              <Link className="text-link" to="/Resume">
+                online resume
+              </Link>
               .
             </div>
             <div className="row">
