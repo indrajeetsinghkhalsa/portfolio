@@ -1,27 +1,24 @@
-import profilePic from "../../assests/unnamed.webp";
-import { ReactComponent as AboutMeSvg } from "../../assests/aboutMe.svg";
-import { ReactComponent as Portfolio } from "../../assests/portfolio.svg";
-import { ReactComponent as Document } from "../../assests/document.svg";
-import { ReactComponent as Contact } from "../../assests/contact.svg";
-import { ReactComponent as HierMe } from "../../assests/hierMe.svg";
 import { Nav } from "react-bootstrap";
 import "bootstrap/js/src/collapse.js";
 import "./ResponsiveSideMenu.scss";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ButtonComponent from "../Common/Button/ButtonComponent";
+import sideMenuData from "../../Data/sideMenu.json"
+import IconComponent from '../../configuration/icon-mapping';
 
 const ResponsiveSideMenu = () => {
   const navigate = useNavigate();
   const changePath = (path) => {
     navigate(path);
   };
+  const hireMe = sideMenuData?.naveBarSetting?.hireMe;
   return (
     <section>
       <header className="header text-center">
         <div className="force-overflow">
           <h1 className="blog-name pt-lg-4 mb-0">
-            <a className="no-text-decoration" href="index.html">
-              Indrajeet Singh
+            <a className="no-text-decoration" href={sideMenuData?.home?.homeURL}>
+              {sideMenuData?.home?.homeTitle}
             </a>
           </h1>
           <nav className="navbar navbar-expand-lg">
@@ -43,100 +40,85 @@ const ResponsiveSideMenu = () => {
               {/* profile section */}
               <div className="profile-section pt-3 pt-lg-0">
                 <img
+                  crossOrigin="anonymous"
                   className="profile-image mb-3 rounded-circle mx-auto"
-                  src={profilePic}
-                  alt="Indrajeet Singh"
+                  src={sideMenuData?.naveBarSetting.profilePicture}
+                  alt={sideMenuData.home.homeTitle}
                 />
                 {/* bio section */}
                 <div className="bio mb-3">
-                  Hi, my name is Indrajeet Singh Badgujar and I'm a senior
-                  software engineer. Welcome to my personal website!
+                  {sideMenuData?.naveBarSetting.bio}
                 </div>
+
                 {/* social list */}
                 <ul className="social-list list-inline py-2 mx-auto">
-                  <li className="list-inline-item">
-                    <a
-                      href="https://www.facebook.com/indrajeetsingh.khalsa.7"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-facebook-square fa-2x"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="mailto:indrajeetsinghkhalsa3@gmail.com">
-                      <i className="fa fa-google-plus-square fa-2x"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://www.instagram.com/indrajeetsinghkhalsa/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-instagram fa-2x"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a
-                      href="https://github.com/indrajeetsinghkhalsa"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fa fa-github fa-2x"></i>
-                    </a>
-                  </li>
+                  {sideMenuData?.naveBarSetting?.socialMediaDetails &&
+                    sideMenuData?.naveBarSetting?.socialMediaDetails?.map((socialMedia, index) => {
+                      return (
+                        <li className="list-inline-item" id={index} key={index}>
+                          <a
+                            href={socialMedia.link}
+                            target={socialMedia.target}
+                            rel="noopener noreferrer"
+                          >
+                            <IconComponent icon={socialMedia.icon.id}
+                              height={socialMedia.icon.height}
+                              width={socialMedia.icon.width}
+                              color={socialMedia.icon.color}
+                            />
+                          </a>
+                        </li>
+                      );
+                    }
+                    )
+                  }
                 </ul>
                 <hr />
               </div>
 
               {/* menu */}
               <div className="menu">
-                <Nav
-                //TODO: if navigation not work the put defaultActiveKey="portfolio/#"
-                  defaultActiveKey="/#"
-                  className="mr-auto flex-column"
-                  onSelect={(selectedKey) => changePath(selectedKey)}
-                >
-                  <Nav.Item>
-                    <Nav.Link eventKey="/#" className="flex-column nav-item">
-                      <AboutMeSvg height="16px" />
-                      About Me
-                    </Nav.Link>
-
-                    <Nav.Link eventKey="/Project" className="flex-column nav-item">
-                      <Portfolio height="16px" />
-                      Portfolio
-                    </Nav.Link>
-
-                    <Nav.Link
-                      eventKey="/Resume"
-                      className="flex-column nav-item"
-                    >
-                      <Document height="16px" />
-                      Resume
-                    </Nav.Link>
-                    <Nav.Link
-                      eventKey="/ContactMe"
-                      className="flex-column nav-item"
-                    >
-                      <Contact height="16px" />
-                      Contact
-                    </Nav.Link>
-                  </Nav.Item>
-                </Nav>
+                {sideMenuData?.naveBarSetting?.menuDetails?.menus &&
+                  <Nav
+                    //TODO: if navigation not work the put defaultActiveKey="portfolio/#"
+                    defaultActiveKey="/#"
+                    className="mr-auto flex-column"
+                    onSelect={(selectedKey) => changePath(selectedKey)}
+                  >
+                    {sideMenuData?.naveBarSetting?.menuDetails?.menus.map((menu, index) => {
+                      return (
+                        <Nav.Item key={index}>
+                          <Nav.Link eventKey={menu.link} className="flex-column nav-item">
+                            <IconComponent icon={menu.icon.id} height={menu.icon.height} width={menu.icon.width} color={menu.icon.color} />
+                            {menu.name}
+                          </Nav.Link>
+                        </Nav.Item>
+                      )
+                    }
+                    )
+                    }
+                  </Nav>
+                }
               </div>
 
               {/* hier me */}
-              <div className="my-2 hireMe">
-                <ButtonComponent
-                  onClickFunction={() =>
-                    navigate("/ContactMe", { replace: true })
-                  }
-                  imageIcon={<HierMe height="20px" />}
-                  lable={" Hire Me"}
-                />
-              </div>
+              {hireMe && (
+                <div className="my-2 hireMe">
+                  <ButtonComponent
+                    onClickFunction={() =>
+                      navigate(hireMe.link, { replace: true })
+                    }
+                    imageIcon={
+                      <IconComponent icon={hireMe.icon.id}
+                        height={hireMe.icon.height}
+                        width={hireMe.icon.width}
+                        color={hireMe.icon.color}
+                      />
+                    }
+                    lable={hireMe.name}
+                  />
+                </div>
+              )}
             </div>
           </nav>
         </div>

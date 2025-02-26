@@ -2,10 +2,10 @@
   {
     "projectId": "pd1",
     "projectTitle": "Athena-UPI",
-    "projectImage": "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp",
-    "description": "Creating the Ecosystem where any bank and registor as a PSP provide to make their transcation Digital using QR can and VPA. It support Mandate between Cutomer to Customer or Bank to customer for Recurring payemnt.",
+    "projectImage": "https://drive.google.com/file/d/0Bxi1Ip1d8KDuZ2lnLXNtcjNXdEE/preview?resourcekey=0-gxTnfxJJn04ZVR7c_O8-Lw",
+    "description": "Creating the Ecosystem where any bank and register as a PSP provide to make their transaction Digital using QR can and VPA. It support Mandate between Customer to Customer or Bank to customer for Recurring payment.",
     "metaData": {
-      "clientSectionImage": "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp",
+      "clientSectionImage": "https://drive.google.com/file/d/0Bxi1Ip1d8KDuZ2lnLXNtcjNXdEE/preview?resourcekey=0-gxTnfxJJn04ZVR7c_O8-Lw",
       "clientName": "Zeta",
       "industry": "Tech",
       "size": 1000,
@@ -15,22 +15,63 @@
         "Support Creating VPA",
         "Support For Mandate",
         "QR Payment",
-        "Bank-Bank-tranfer",
-        "Automate and Manual Disput Resolution"
+        "Bank-Bank-transfer",
+        "Automate and Manual Dispute Resolution"
       ]
     },
     "projectDetails": [
       {
         "showInBetweenImage": false,
         "subTitle": "Project OverView",
-        "description": "UPI Athena is solution for Banks to tarnsfer mony online through up. This project is created in generalised way where any bank register as VPA-Provider. We support vpa block Mandate for Auto Recurring Payment which QR support."
+        "description": "UPI Athena is solution for Banks to transfer mony online through up. This project is created in generalized way where any bank register as VPA-Provider. We support vpa block Mandate for Auto Recurring Payment which QR support."
       },
       {
         "showInBetweenImage": true,
-        "subTitle": "Sub Service And its Architechure",
-        "beforImage": "Mandate is a sub system of UPI where user can Make an Digital Agreement between payer and payee/remitter banks to enable Recurring payement which is auto deducted from payer bank on date which is mentioned in contract/mandate. This system support Create, Update, Pause, UnPause, Delete and Mandate execution. Form more details you can visit on UPI website",
-        "images": ["/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp", "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp"],
-        "afterImage": "I have worked on Mandate service from Scrach where I have used State Machine for implementing the architechure for somth flow of Trasection where single Transection have multiple state or al state are Asyncronses."
+        "subTitle": "Sub Service And its Architecture",
+        "beforeImage": "Mandate is a sub system of UPI where user can Make an Digital Agreement between payer and payee/remitter banks to enable Recurring payment which is auto deducted from payer bank on date which is mentioned in contract/mandate. This system support Create, Update, Pause, UnPause, Delete and Mandate execution. Form more details you can visit on UPI website",
+        "images": ["/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webb", "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp"],
+        "afterImage": "I have worked on Mandate service from Scratch where I have used State Machine for implementing the architecture for smooth flow of Transaction where single Transaction have multiple state."
+      }
+    ]
+  },
+  {
+    "projectId": "pd2",
+    "projectTitle": "Metrox Devtool",
+    "projectImage": "./src/assets/projectDetails/amdocs-logo-2x_0.png",
+    "description": "Create a Ecosystem where Implication Team should able to manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more",
+    "metaData": {
+      "clientSectionImage": "./src/assets/projectDetails/amdocs-logo-2x_0.png",
+      "clientName": "Metrox, Global (All are Amdcos Client)",
+      "industry": "Amdocs",
+      "website": "https://www.amdocs.com/",
+      "clientBio": "Amdocs is a leading software & services provider to communications & media companies, providing innovative solutions",
+      "requirement": [
+        "Manage Different Environment from one place",
+        "Support Deployment Artifact in control Environment, for al Environment",
+        "Role base access control",
+        "Able to Identify the difference between old state and new state of Environment or provide difference between Environment"
+      ]
+    },
+    "projectDetails": [
+      {
+        "showInBetweenImage": false,
+        "subTitle": "Project OverView",
+        "description": "Metrox is a Ecosystem where Implication Team should able to manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more."
+      },
+      {
+        "showInBetweenImage": true,
+        "subTitle": "Sub Service And its Architecture",
+        "beforeImage": "Environment Management, Master CI/DC, Approval Center, Drift this are the 4 pillar for Metrox",
+        "images": ["/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webb", "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp"],
+        "afterImage": "We use Micro service architecture here, with proxy server to divert request from one place. We also include Kafka for manage the message queue. We also use Vault and Config server to manage Service configuration and secret. TO Manage data we use Postgres, For UI react js, For parsing a file and Auto Discovery, Java for other microservice."
+      },
+
+      {
+        "showInBetweenImage": false,
+        "subTitle": "Drift Service",
+        "images": [],
+        "description": "I have worked on Drift Service where I have used Multithreading and Queues for manage high request and parallel execution of task. Where their are 3 microservice which is responsible to execute and calculate the drift.",
+        "afterImage": "The process is, The Data-collector service collect the selected environment details form Environment service, info like server location, user, password. Now Data Collector service send request to Connectivity-service, basically it connect to actual server and collect data from server with respect to selective information and send to Data comparator. Now Data-Comparator service compare collected data and store data and show the difference. And this information is shown to User on Dashboard of Metrox"
       }
     ]
   }

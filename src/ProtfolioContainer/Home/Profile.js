@@ -2,7 +2,7 @@ import "./Profile.scss";
 import "bootstrap/js/src/collapse.js";
 import { AboutMe } from "./AboutMe/AboutMe";
 import { Overview } from "./Overview/Overview";
-import { TestimonialCrousel } from "./TestimonialCrousel/TestimonialCrousel";
+import { TestimonialCarousel } from "./TestimonialCrousel/TestimonialCarousel";
 import { ProjectCards } from "../Project/ProjectCards";
 import PortfolioModal from "../Common/Modal/PortfolioModal";
 import { useState } from "react";
@@ -12,7 +12,7 @@ import ProjectList from "../../Data/projectDetails/ProjectDetails.json";
 function Profile() {
   const [openModal, setOpenModal] = useState(false);
   const [ProjectModalData, setProjectModalData] = useState({});
-  const projectToggleModal = (projectId) =>{
+  const projectToggleModal = (projectId) => {
     setProjectModalData(ProjectList.filter(project => project.projectId === projectId));
     setOpenModal(!openModal)
   }
@@ -20,7 +20,7 @@ function Profile() {
     <div className="content-section Profile">
       <AboutMe />
       <Overview />
-      <TestimonialCrousel />
+      <TestimonialCarousel />
       <section className="Project p-3 p-lg-5">
         <div className="container">
           <h2 className="section-title font-weight-bold mb-5">Project</h2>
@@ -28,7 +28,15 @@ function Profile() {
         </div>
       </section>
       {openModal && (
-        <PortfolioModal modalCloseAction={projectToggleModal} onClickFunction ={projectToggleModal} modalBody={<ProjectDetails project={ProjectModalData[0]}/>}/>
+        <PortfolioModal
+          modalCloseAction={projectToggleModal}
+          onClickFunction={projectToggleModal}
+          modalBody={
+            <ProjectDetails
+              project={ProjectModalData[0]}
+            />
+          }
+        />
       )}
     </div>
   );
