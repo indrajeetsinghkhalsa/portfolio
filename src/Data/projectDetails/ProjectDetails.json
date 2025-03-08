@@ -59,18 +59,16 @@
         "description": "Metrox is a Ecosystem where Implication Team should able to manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more."
       },
       {
-        "showInBetweenImage": true,
+        "showInBetweenImage": false,
         "subTitle": "Sub Service And its Architecture",
-        "beforeImage": "Environment Management, Master CI/DC, Approval Center, Drift this are the 4 pillar for Metrox",
-        "images": ["/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webb", "/portfolio/static/media/unnamed.4ad7a0f005b4e8e9972e.webp"],
-        "afterImage": "We use Micro service architecture here, with proxy server to divert request from one place. We also include Kafka for manage the message queue. We also use Vault and Config server to manage Service configuration and secret. TO Manage data we use Postgres, For UI react js, For parsing a file and Auto Discovery, Java for other microservice."
+        "description": "Environment Management, Master CI/DC, Approval Center, Drift this are the 4 pillar for Metrox. We use Micro service architecture here, with proxy server to divert request from one place. We also include Kafka for manage the message queue. We also use Vault and Config server to manage Service configuration and secret. TO Manage data we use Postgres, For UI react js, For parsing a file and Auto Discovery, Java for other microservice."
       },
 
       {
         "showInBetweenImage": true,
         "subTitle": "Drift Service",
         "images": ["https://dl.dropboxusercontent.com/scl/fi/om3tueds4mh2g114gpjbc/drift_select_env.png?rlkey=7yhufou5kwet8qp3yy3wjggut&st=0y0agget&dl=1","https://dl.dropboxusercontent.com/scl/fi/lzb4p843xjckjpoluncsh/result_drift.png?rlkey=4okq5e0k2edewlv9gkqxlaa08&st=qsptjcmc&dl=1"],
-        "description": "I have worked on Drift Service where I have used Multithreading and Queues for manage high request and parallel execution of task. Where their are 3 microservice which is responsible to execute and calculate the drift.",
+        "beforeImage": "I have worked on Drift Service where I have used Multithreading and Queues for manage high request and parallel execution of task. Where their are 3 microservice which is responsible to execute and calculate the drift.",
         "afterImage": "The process is, The Data-collector service collect the selected environment details form Environment service, info like server location, user, password. Now Data Collector service send request to Connectivity-service, basically it connect to actual server and collect data from server with respect to selective information and send to Data comparator. Now Data-Comparator service compare collected data and store data and show the difference. And this information is shown to User on Dashboard of Metrox"
       }
     ]
