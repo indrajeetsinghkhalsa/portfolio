@@ -1,0 +1,120 @@
+{
+  "whatIDo": {
+    "description": "I have more than 4+ years' experience building software for clients. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my ",
+    "links": [
+      {
+        "link": "/Resume",
+        "linkName": "online resume"
+      },
+      {
+        "link": "/Project",
+        "linkName": "Projects"
+      }
+    ]
+  },
+
+  "skillSet": [
+    {
+      "title": "Java And Java 8",
+      "description": "Having more than 4+ years experience in this technology. Used for backend development",
+      "iconList": [
+        {
+          "id": "language-java-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "Java Script",
+      "description": "I have 6 months experience in this technology. Usually used for scripting when creating webpages",
+      "iconList": [
+        {
+          "id": "language-javascript-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "HTML And Css",
+      "description": "Having more than 6 months experience in this technology. Used for frontend development",
+      "iconList": [
+        {
+          "id": "language-html5-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        },
+        {
+          "id": "language-css3-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "Sql",
+      "description": "Moderate level. Used for data storage",
+      "iconList": [
+        {
+          "id": "language-sql-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "Spring Boot",
+      "description": "Using for better performance and management",
+      "iconList": [
+        {
+          "id": "language-springioIcon-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "Git",
+      "description": "Using for code management",
+      "iconList": [
+        {
+          "id": "github-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "React Js",
+      "description": "Having more than 6 months experience in this technology. Used for backend development",
+      "iconList": [
+        {
+          "id": "language-reactjs-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    },
+    {
+      "title": "Kibana",
+      "description": "Tool used for reading logs",
+      "iconList": [
+        {
+          "id": "language-kibana-icon",
+          "height": "",
+          "width": "",
+          "color": ""
+        }
+      ]
+    }
+  ]
+}

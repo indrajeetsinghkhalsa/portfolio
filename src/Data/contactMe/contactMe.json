@@ -1,0 +1,48 @@
+{
+    "socialMediaDetails": [
+      {
+        "link": "https://www.facebook.com/indrajeetsingh.khalsa.7",
+        "name": "Facebook",
+        "target": "_blank",
+        "icon": {
+          "id": "facebook-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": ""
+        }
+      },
+      {
+        "link": "mailto:indrajeetsinghkhalsa3@gmail.com",
+        "name": "Gmail",
+        "target": "",
+        "icon": {
+          "id": "googleMail-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": ""
+        }
+      },
+      {
+        "link": "https://www.instagram.com/indrajeetsinghkhalsa/",
+        "name": "Instagram",
+        "target": "_blank",
+        "icon": {
+          "id": "instagram-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": ""
+        }
+      },
+      {
+        "link": "https://github.com/indrajeetsinghkhalsa",
+        "name": "Github",
+        "target": "_blank",
+        "icon": {
+          "id": "github-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": ""
+        }
+      }
+    ]
+}

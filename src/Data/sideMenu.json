@@ -1,0 +1,110 @@
+{
+  "home": {
+    "homeURL": "index.html",
+    "homeTitle": "Indrajeet Singh"
+  },
+  "naveBarSetting": {
+    "bio": "Hi, my name is Indrajeet Singh Badgujar and I'm a senior software engineer. Welcome to my personal website!",
+    "profilePicture": "https://dl.dropboxusercontent.com/scl/fi/7y4i57lcimw3ft5d7ants/LS20250223164551.png?rlkey=pahv8j2bi30lxgyzxzopov7nw&st=icmdskts&dl=1",
+    "socialMediaDetails": [
+      {
+        "link": "https://www.facebook.com/indrajeetsingh.khalsa.7",
+        "name": "Facebook",
+        "target": "_blank",
+        "icon": {
+          "id": "facebook-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": "white"
+        }
+      },
+      {
+        "link": "mailto:indrajeetsinghkhalsa3@gmail.com",
+        "name": "Gmail",
+        "target": "",
+        "icon": {
+          "id": "googleMail-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": "white"
+        }
+      },
+      {
+        "link": "https://www.instagram.com/indrajeetsinghkhalsa/",
+        "name": "Instagram",
+        "target": "_blank",
+        "icon": {
+          "id": "instagram-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": "white"
+        }
+      },
+      {
+        "link": "https://github.com/indrajeetsinghkhalsa",
+        "name": "Github",
+        "target": "_blank",
+        "icon": {
+          "id": "github-icon",
+          "height": "32px",
+          "width": "32px",
+          "color": "white"
+        }
+      }
+    ],
+    "menuDetails": {
+      "menus": [
+        {
+          "link": "/#",
+          "name": "Home",
+          "icon": {
+            "id": "aboutMe-icon",
+            "height": "16px",
+            "width": "16px",
+            "color": "white"
+          }
+        },
+        {
+          "link": "/Project",
+          "name": "Portfolio",
+          "icon": {
+            "id": "portfolio-icon",
+            "height": "16px",
+            "width": "16px",
+            "color": "white"
+          }
+        },
+        {
+          "link": "/Resume",
+          "name": "Resume",
+          "icon": {
+            "id": "document-icon",
+            "height": "16px",
+            "width": "16px",
+            "color": "white"
+          }
+        },
+        {
+          "link": "/ContactMe",
+          "name": "Contact",
+          "icon": {
+            "id": "contact-icon",
+            "height": "16px",
+            "width": "16px",
+            "color": "white"
+          }
+        }
+      ]
+    },
+    "hireMe": {
+      "link": "/ContactMe",
+      "name": "Hire Me",
+      "icon": {
+        "id": "hireMe-icon",
+        "height": "16px",
+        "width": "16px",
+        "color": "white"
+      }
+    }
+  }
+}

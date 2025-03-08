@@ -1,0 +1,284 @@
+{
+  "header": {
+    "name": "Indrajeet Singh Badgujar",
+    "designation": "Software Engineer",
+    "contactDetails": [
+      {
+        "isCLickable": true,
+        "link": "tel:#",
+        "displayName": "(+91) 7875 3469 48",
+        "icon": {
+          "id": "phone-icon",
+          "height": "16px",
+          "width": "16px",
+          "color": "#4f4f4f"
+        }
+      },
+      {
+        "isCLickable": true,
+        "link": "mailto:indrajeetsinghkhalsa3@gmail.com",
+        "displayName": "indrajeetsingkhalsa3@gmail.com",
+        "icon": {
+          "id": "message-icon",
+          "height": "16px",
+          "width": "16px",
+          "color": "#4f4f4f"
+        }
+      },
+      {
+        "isCLickable": false,
+        "link": "tel:#",
+        "displayName": "Nashik Road",
+        "icon": {
+          "id": "location-icon",
+          "height": "16px",
+          "width": "16px",
+          "color": "#4f4f4f"
+        }
+      }
+    ],
+    "introductionDetails": {
+      "profilePicture": "https://dl.dropboxusercontent.com/scl/fi/7y4i57lcimw3ft5d7ants/LS20250223164551.png?rlkey=pahv8j2bi30lxgyzxzopov7nw&st=icmdskts&dl=1",
+      "introduction": "Professional software engineer with 4+ years of experience of developing innovative technical solutions which included requirement gathering, technical design documentation, development, unit testing and post production go live support"
+    }
+  },
+
+  "body": {
+    "leftSection": [
+      {
+        "id":"work-section",
+        "title": "Work Experiences",
+        "data": [
+          {
+            "subTitle": "Software Associate",
+            "tag": "Verinite Technology Pvt Ltd (Zeta) | 2020–2022",
+            "description": "Software Associate (Java Developer). Working on Technology: Microservice Architecture to Solve the Bank's Industrial Problem with 90% Code Coverage Done two projects in this role: the bank application to do online payments and the credit card bill generator.",
+            "featurePoints": [
+              "Microservice",
+              "Bitbucket for code management",
+              "Sonarqube for code quality",
+              "Jenkins for CI/CD"
+            ]
+          },
+          {
+            "subTitle": "Senior Software Associate",
+            "tag": "Verinite Technology Pvt Ltd (Zeta) | 2022-2022",
+            "description": "Software Associate (Java Developer). Working on Technology: Microservice Architecture to Solve the Bank's Industrial Problem with 90% Code Coverage, 1 Major project to make UPI-PSP for HDFC Bank with the collaboration of Unified Payments Interface to consume their API for payment. Provided Training on Databases and Spring Boot.",
+            "featurePoints": [
+              "Ownership of one service and used State Machine concept for implementing the feature",
+              "Bitbucket for code management",
+              "Sonarqube for code quality",
+              "Jenkins for CI/CD",
+              "Kibana for log management",
+              "Docker for creating docker image",
+              "Given training to junior"
+            ]
+          },
+          {
+            "subTitle": "Software Engineer",
+            "tag": "Amdocs | 08/2022-Present",
+            "Description": "R&D Department, where I am working as a Full Stack Developer with different tools and Framework. I do research on a feature to solve the problem raised by the customer and improve the customer experience with improvements to the code and adding new features.",
+            "featurePoints": [
+              "Project: Assessment Management for Servers. In a production environment where users can manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more",
+              "Gitlab for code management",
+              "Sonarqube for code quality",
+              "Jenkins for CI/CD"
+            ]
+          }
+        ]
+      },
+      {
+        "id":"project-section",
+        "title": "PROJECTS",
+        "data": [
+          {
+            "subTitle": "METROX (Fullstack Developer)",
+            "tag": "AMDOCS",
+            "description": "Assets Management for Servers. In a production environment where users can manage the deployment cycle, schedule the deployment, find the difference between changes in the environment and notify the user, and much more",
+            "featurePoints": [
+              "Assets Management for Different Environment",
+              "Support CI/CD",
+              "Scan The Environment",
+              "Drift MAnagement(Find the Difference with old state and new state)",
+              "FTP Support"
+            ]
+          },
+          {
+            "subTitle": "Athena UPI-PSP (Backend Developer)",
+            "tag": "Verinite Technology Collaborate with Zeta",
+            "description": "Creating the Ecosystem where any bank and register as a PSP provide to make their transaction Digital using QR can and VPA. It support Mandate between Customer to Customer or Bank to customer for Recurring payment.",
+            "featurePoints": [
+              "Support Creating VPA",
+              "Support For Mandate",
+              "QR Payment",
+              "Bank-Bank-transfer",
+              "Automate and Manual Dispute Resolution"
+            ]
+          },
+          {
+            "subTitle": "Indusind-Addon (Backend Developer)",
+            "tag": "Verinite Technology Collaborate with Zeta",
+            "description": "When user do Online Shopping with credit card, after that is user want to an EMI Option for its bill then that process is a manual where user have to call service center and ask for this support. Now in this project  we solve the problem where Bank can directly provide an option to convert into EMI option when user using a Credit Card for online shopping and is their any rewards point available then this is be subtracted from bill at that time."
+          },
+          {
+            "subTitle": "Water State Observation using IOT (Backend developer)",
+            "tag": "Finel Year Project",
+            "description": "Idea is to make a device which can collect the water state form River, Lack, Tank etc. and notify the end user that how much water is clean and it is usable or not. We are capturing the Temperature, PHP value and Oxygen level, water motion to identify the water state."
+          },
+          {
+            "subTitle": "Job Scheduling System (Fullstack Developer)",
+            "tag": "Tushar Precicomp Pvt Ltd.",
+            "description": "On Industry where their are N different CNC machine and each Machine can capable of doing N no of different task. Here, for a single person, it is very difficult for managers to allocate tasks for workers with files to be run on which machine. And it is very difficult to track in a sift how much through machine and worker had cover. TO solve this problem, we make this solution which web architecture to automate this process in single click",
+            "featurePoints": [
+              "Allocate task by Manager",
+              "Machine Audit",
+              "Worker Audit",
+              "Inventory for Material and final product"
+            ]
+          },
+          {
+            "subTitle": "Training and Placement Management for Collage",
+            "tag": "MET Bhujbal Knowledge City, Nashik",
+            "description": "To tack the student data who had Placed in which company and Collecting student data to send for company Placement Interview where finding a eligible candidate from that hug data is tedious task. To solve this problem, we design a system where students fill details with their documents which are verified at two levels and now, using this system, they can generate data with a single click with selection criteria.",
+            "featurePoints": [
+              "Data Validation of two levels by system",
+              "Resume Generator",
+              "Criteria evaluator",
+              "Segregate the student who already placed"
+            ]
+          }
+        ]
+      }
+    ],
+    "rightSection": [
+      {
+        "id": "skills",
+        "title": "SKILLS",
+        "data": [
+          {
+            "subTitle": "Programming Languages",
+            "featurePoints": [
+              "Core JAVA",
+              "Advance JAVA, JAVA",
+              "C/C++ Basic Level"
+            ]
+          },
+          {
+            "subTitle": "Frontend",
+            "featurePoints": ["HTML (Moderate)", "CSS (Moderate)"]
+          },
+          {
+            "subTitle": "DBMS",
+            "featurePoints": ["SQL (Bigener)", "PostgreSQL/MySQL"]
+          },
+          {
+            "subTitle": "Operating System",
+            "featurePoints": ["Windows 10", "Linux", "IOS"]
+          },
+          {
+            "subTitle": "Frameworks",
+            "featurePoints": ["Spring Boot", "ReactJs"]
+          },
+          {
+            "subTitle": "Testing Frameworks",
+            "featurePoints": [
+              "Junit 5",
+              "Rest Assured",
+              "Mockito",
+              "Wire Mock Server"
+            ]
+          },
+          {
+            "subTitle": "Tools",
+            "featurePoints": ["Git Version Control", "Postman", "Intellij"]
+          },
+          {
+            "subTitle": "Professional",
+            "featurePoints": [
+              "Effective communication",
+              "Team player",
+              "Strong problem solver",
+              "Good time management"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "education",
+        "title": "EDUCATION",
+        "data": [
+          {
+            "subTitle": "Savitribai Phule Pune University",
+            "description": "Bachelor's of Engineering (Computer)",
+            "tag": "2020",
+            "featurePoints": ["75%"]
+          },
+          {
+            "subTitle": "MSBTE",
+            "description": "Diploma In Computer Technologies",
+            "tag": "2017",
+            "featurePoints": ["70.6%"]
+          },
+          {
+            "subTitle": "Maharashtra State Board",
+            "description": "SSC",
+            "tag": "2013",
+            "featurePoints": ["75.45%"]
+          }
+        ]
+      },
+      {
+        "id":"awards",
+        "title": "AWARDS",
+        "data": [
+          {
+            "featurePoints": [
+              "Awarded as best Employee of Quarter",
+              "Technical Head, Student’s Association of Computers (2018-19).",
+              "President, Developer Students Club of College (2020-2021).",
+              "President, Computer Society of India (Student Branch 2019-20).",
+              "JAVA, C ,CPP Certification training from IIT Bombay.",
+              "Three times 1ST Prize in Inter College Coding Competition."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "languages",
+        "title": "LANGUAGES",
+        "data": [
+          {
+            "featurePoints": ["English", "Hindi"]
+          }
+        ]
+      }
+    ]
+  },
+
+  "footer": {
+    "icons": [
+      {
+        "link": "https://github.com/indrajeetsinghkhalsa",
+        "name": "indrajeetsinghkhalsa",
+        "target": "_blank",
+        "icon": {
+          "id": "github-icon",
+          "height": "24px",
+          "width": "24px",
+          "color": "#767676"
+        }
+      },
+      {
+        "link": "https://www.linkedin.com/in/indrajeet-singh-khalsa-999166141/",
+        "name": "indrajeet-singh-khalsa",
+        "target": "_blank",
+        "icon": {
+          "id": "linkedIn-icon",
+          "height": "24px",
+          "width": "24px",
+          "color": "#767676"
+        }
+      }
+    ]
+  }
+}

@@ -2,22 +2,13 @@ import ButtonComponent from "../Common/Button/ButtonComponent";
 import PageHeader from "../Common/Page/PageHeader";
 import { ReactComponent as Pdf } from "../../assests/pdf.svg";
 import PageSection from "../Common/Page/PageSection";
-import { ReactComponent as Phone } from "../../assests/phone.svg";
-import { ReactComponent as Email } from "../../assests/message.svg";
-import { ReactComponent as Location } from "../../assests/location.svg";
-import { ReactComponent as LinkedIn } from "../../assests/linkedIn.svg";
-import { ReactComponent as Github } from "../../assests/github.svg";
-import profilePic from "../../assests/unnamed.webp";
 
-import workData from "../../Data/Resume/WorkExperiences.json";
-import projectDataFile from "../../Data/Resume/ProjectData.json";
-import skillData from "../../Data/Resume/Skills.json";
-import education from "../../Data/Resume/Education.json";
-import awards from "../../Data/Resume/Awards.json";
-import languages from "../../Data/Resume/Languages.json";
 
 import "./Resume.scss";
 import InfoItemWidget from "../Common/infoItemWidget/InfroItemWidget";
+import IconComponent from "../../configuration/icon-mapping";
+
+import resumeData from "../../Data/Resume/Resume.json";
 
 //import for pdf generator
 /* ES6 */
@@ -65,6 +56,7 @@ const GetPageHeader = () => {
 };
 
 const ResumePageHeader = () => {
+  const header = resumeData?.header;
   return (
     <>
       <div className="resume-container-header">
@@ -72,28 +64,25 @@ const ResumePageHeader = () => {
           <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
             <h2 className={"resume-name text-uppercase"}>
               {" "}
-              INDRJAEET SINGH BADGUJAR
+              {header.name}
             </h2>
-            <p className="resume-tagline mb-3 mb-md-0"> Software Developer</p>
+            <p className="resume-tagline mb-3 mb-md-0"> {header.designation}</p>
           </div>
           <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
             <ul className="list-unstyled mb-0">
-              <li className="mb-2">
-                <Phone color={"#4f4f4f"} height="16px" />
-                <a className="resume-link" href="tel:#">
-                  (+91) 7875 3469 48
-                </a>
-              </li>
-              <li className="mb-2">
-                <Email color={"#4f4f4f"} height="16px" />
-                <a className="resume-link" href="mailto:indrajeetsinghkhalsa3@gmail.com">
-                  indrajeetsingkhalsa3@gmail.com
-                </a>
-              </li>
-              <li className="mb-0">
-                <Location color={"#4f4f4f"} height="16px" />
-                Nashik Road
-              </li>
+              {header?.contactDetails?.map((contact, index) => {
+                return (
+                  <li className="mb-2" id={index}>
+                    <IconComponent icon={contact.icon.id} height={contact.icon.height} width={contact.icon.width} color={contact.icon.color} />
+                    {
+                      contact.isCLickable ?
+                        <a className="resume-link" href={contact.link}> {contact.displayName} </a>
+                        :
+                        contact.displayName
+                    }
+                  </li>
+                )
+              })}
             </ul>
           </div>
         </div>
@@ -104,23 +93,22 @@ const ResumePageHeader = () => {
 };
 
 const ResumeIntro = () => {
+  const introductionDetails = resumeData?.header?.introductionDetails;
   return (
     <>
       <div className="resume-intro py-3">
         <div className="row align-items-center">
           <div className="col-12 col-md-3 col-xl-2 text-center">
             <img
+              crossOrigin="anonymous"
               className="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded-circle mx-auto"
-              src={profilePic}
+              src={introductionDetails.profilePicture}
               alt="Indrajeet Singh"
             />
           </div>
           <div className="col text-start">
             <p className="col text-start">
-              Professional software engineer with 1.5 years of experience of
-              developing innovative technical solutions which included
-              requirement gathering, technical design documentation,
-              development, unit testing and post production go live support
+              {introductionDetails.introduction}
             </p>
           </div>
         </div>
@@ -131,57 +119,54 @@ const ResumeIntro = () => {
 };
 
 const ResumeBody = () => {
+  const body = resumeData?.body;
+  const leftSection = body?.leftSection;
+  const rightSection = body?.rightSection;
   return (
     <div className="resume-body">
       <div className="row">
-        <div className="resume-main col-12 col-lg-8 col-xl-9 pe-0 pe-lg-5">
-          <section className="work-section py-3">
-            <InfoItemWidget
-              dataList={workData[0].data}
-              title={workData[0].title}
-            />
-          </section>
-          <section className="project-section py-3">
-            <InfoItemWidget
-              dataList={projectDataFile[0].data}
-              title={projectDataFile[0].title}
-            />
-          </section>
-        </div>
-        <aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
-          <section className="skills-section py-3">
-            <InfoItemWidget
-              className={"skills"}
-              dataList={skillData[0].data}
-              title={skillData[0].title}
-            />
-          </section>
-          <section className="education-section py-3">
-            <InfoItemWidget
-              className={"education"}
-              dataList={education[0].data}
-              title={education[0].title}
-              styleList={false}
-            />
-          </section>
-          <section className="awards-section py-3">
-            <InfoItemWidget
-              className={"awards"}
-              dataList={awards[0].data}
-              title={awards[0].title}
-              styleList={false}
-            />
-          </section>
-          <section className="awards-section py-3">
-            <InfoItemWidget
-              LANGUAGES
-              className={"languages"}
-              dataList={languages[0].data}
-              title={languages[0].title}
-              styleList={false}
-            />
-          </section>
-        </aside>
+        {/* left Section */}
+        {
+          leftSection && leftSection.length > 0 && (
+            <div className={`resume-main col-12  ${rightSection && rightSection?.length > 0 ? 'col-lg-8 col-xl-9' : 'col-lg-12 col-xl-12'} pe-0 pe-lg-5`}>
+              {
+                leftSection.map((sectionDetails) => {
+                  return (
+
+                    <section className="py-3" id={sectionDetails.id}>
+                      <InfoItemWidget
+                        className={sectionDetails.id}
+                        dataList={sectionDetails.data}
+                        title={sectionDetails.title}
+                      />
+                    </section>
+                  )
+                })
+              }
+            </div>
+          )
+        }
+        {/* right section */}
+        {
+          rightSection && rightSection?.length > 0 && (
+            <aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+              {
+                rightSection.map((sectionDetails) => {
+                  return (
+                    <section className="py-3" id={sectionDetails.id}>
+                      <InfoItemWidget
+                        className={sectionDetails.id}
+                        dataList={sectionDetails.data}
+                        title={sectionDetails.title}
+                      />
+                    </section>
+                  )
+                }
+                )
+              }
+            </aside>
+          )
+        }
       </div>
       <hr className="mt-4" />
     </div>
@@ -189,35 +174,27 @@ const ResumeBody = () => {
 };
 
 const ResumeFooter = () => {
+  const footer = resumeData?.footer;
   return (
     <section className="resume-footer text-center">
-      <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-        <li class="list-inline-item mb-lg-0 me-3">
-          <a
-            class="resume-link"
-            href="https://github.com/indrajeetsinghkhalsa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github className="me-2" color={"#767676"} height="24px" />
-            <span class="d-none d-lg-inline-block text-muted">
-            indrajeetsinghkhalsa
-            </span>
-          </a>
-        </li>
-        <li class="list-inline-item mb-lg-0 me-3">
-          <a
-            class="resume-link"
-            href="https://www.linkedin.com/in/indrajeet-singh-khalsa-999166141/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedIn className="me-2" color={"#767676"} height="24px" />
-            <span class="d-none d-lg-inline-block text-muted">
-              indrajeet-singh-khalsa
-            </span>
-          </a>
-        </li>
+      <ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+        {footer?.icons && footer.icons.map((iconDetails) => {
+          return (
+            <li className="list-inline-item mb-lg-0 me-3">
+              <a
+                className="resume-link"
+                href={iconDetails.link}
+                target={iconDetails.target}
+                rel="noopener noreferrer"
+              >
+                <IconComponent className="me-2" icon={iconDetails.icon.id} height={iconDetails.icon.height} width={iconDetails.icon.width} color={iconDetails.icon.color} />
+                <span className="d-none d-lg-inline-block text-muted">
+                  {iconDetails.name}
+                </span>
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );
@@ -228,7 +205,7 @@ const Resume = () => {
     <div className="content-section resume">
       <PageHeader
         className="resume-header text-center single-col-max-width"
-        Header={<GetPageHeader/>}
+        Header={<GetPageHeader />}
       />
       <PageSection
         className="resume-container"
