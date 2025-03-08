@@ -40,7 +40,6 @@ const ResponsiveSideMenu = () => {
               {/* profile section */}
               <div className="profile-section pt-3 pt-lg-0">
                 <img
-                  crossOrigin="anonymous"
                   className="profile-image mb-3 rounded-circle mx-auto"
                   src={sideMenuData?.naveBarSetting.profilePicture}
                   alt={sideMenuData.home.homeTitle}

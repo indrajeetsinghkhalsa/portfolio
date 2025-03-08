@@ -20,7 +20,7 @@ const PortfolioModal = (props) => {
           <ButtonComponent
             className="modal-close"
             onClickFunction={props.modalCloseAction}
-            imageIcon={<IconComponent  icon={"close-icon"} height={"50px"} width={"50px"} color={"black"}/>}
+            imageIcon={<IconComponent  icon={"cross-icon"} height={"50px"} width={"50px"} color={"black"}/>}
           />
           {props.modalHeader && <div className="modal-header">{props.modalHeader}</div>}
           {props?.modalBody && <div className="modal-body">{props.modalBody}</div>}

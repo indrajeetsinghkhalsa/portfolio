@@ -5,16 +5,15 @@
     position: relative;
     height: 100%;
 
-    // .btn-secondary:hover {
-    //     color: #fff;
-    //     background-color: #434343;
-    //     border-color: #3f3f3f;
-    // }
-
     .card-img-holder {
         max-height: 200px;
-        overflow: hidden;
-        vertical-align: middle;
+    }
+    
+    .card-img-holder img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
     }
 
     .link-mask {

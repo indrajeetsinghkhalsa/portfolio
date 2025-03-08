@@ -1,13 +1,13 @@
 {
   "whatIDo": {
-    "description": "I have more than 2 years' experience building software for clients. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my ",
+    "description": "I have more than 4+ years' experience building software for clients. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my ",
     "links": [
       {
         "link": "/Resume",
         "linkName": "online resume"
       },
       {
-        "link": "/Projects",
+        "link": "/Project",
         "linkName": "Projects"
       }
     ]
@@ -16,7 +16,7 @@
   "skillSet": [
     {
       "title": "Java And Java 8",
-      "description": "Having more than 1.5 years experience in this technology. Used for backend development",
+      "description": "Having more than 4+ years experience in this technology. Used for backend development",
       "iconList": [
         {
           "id": "language-java-icon",

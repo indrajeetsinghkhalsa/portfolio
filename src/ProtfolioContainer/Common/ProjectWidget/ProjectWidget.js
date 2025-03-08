@@ -27,7 +27,7 @@ export const ProjectWidget = ({
           <div className="card project-card">
             <div className="row">
               <div className="col-12 col-xl-5 card-img-holder">
-                <img src={project?.projectImage} />
+                <img src={project?.clientSectionImage} />
               </div>
               <div className="col-12 col-xl-7">
                 <div className="card-body">

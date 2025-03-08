@@ -17,7 +17,7 @@ const ProjectDetails = ({ project }) => {
               <div className="col-md-5 col-lg-4 col-xxl-3 d-none d-md-block">
                 <img
                   className="project-thumb img-fluid rounded"
-                  src={project?.metaData?.clientSectionImage}
+                  src={project?.metaData?.projectImage}
                   alt="projectImage"
                 />
               </div>

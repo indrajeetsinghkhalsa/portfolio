@@ -39,14 +39,16 @@ const GetAboutMe = () => {
             />
           </div>
         </div>
+        {aboutData?.profileImage && (
+          <div className="col-md-5 col-lg-5">
+            <img
+              className="profile-image img-fluid mb-3 mb-lg-0 me-md-0"
+              src={aboutData.profileImage}
+              alt="portfolio-profile-name"
+            />
+          </div>
+        )}
 
-        <div className="col-md-5 col-lg-5">
-          <img
-            className="profile-image img-fluid mb-3 mb-lg-0 me-md-0"
-            src={aboutData.profileImage}
-            alt="portfolio-profile-name"
-          />
-        </div>
       </div>
     </div>
   );
